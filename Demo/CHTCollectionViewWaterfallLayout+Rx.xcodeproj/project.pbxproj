@@ -18,7 +18,7 @@
 		32C4DBFD1EDA8F3A00053AB9 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4DBFC1EDA8F3A00053AB9 /* GroupViewController.swift */; };
 		32C4DBFF1EDA9C4200053AB9 /* XXXCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4DBFE1EDA9C4200053AB9 /* XXXCollectionViewCell.swift */; };
 		32C4DC011EDA9C7300053AB9 /* XXXCollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C4DC001EDA9C7300053AB9 /* XXXCollectionViewHeader.swift */; };
-		32D195481EBACFAA00FE669C /* CHTWaterfallLayoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D195471EBACFAA00FE669C /* CHTWaterfallLayoutList.swift */; };
+		32D195481EBACFAA00FE669C /* CHTWaterfallList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D195471EBACFAA00FE669C /* CHTWaterfallList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,7 @@
 		32C4DBFC1EDA8F3A00053AB9 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupViewController.swift; path = "CHTCollectionViewWaterfallLayout+Rx/GroupViewController.swift"; sourceTree = "<group>"; };
 		32C4DBFE1EDA9C4200053AB9 /* XXXCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXXCollectionViewCell.swift; sourceTree = "<group>"; };
 		32C4DC001EDA9C7300053AB9 /* XXXCollectionViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXXCollectionViewHeader.swift; sourceTree = "<group>"; };
-		32D195471EBACFAA00FE669C /* CHTWaterfallLayoutList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTWaterfallLayoutList.swift; sourceTree = "<group>"; };
+		32D195471EBACFAA00FE669C /* CHTWaterfallList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTWaterfallList.swift; sourceTree = "<group>"; };
 		36A54EBE2D14DEB88C242189 /* Pods-CHTCollectionViewWaterfallLayout+Rx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHTCollectionViewWaterfallLayout+Rx.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHTCollectionViewWaterfallLayout+Rx/Pods-CHTCollectionViewWaterfallLayout+Rx.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B75DD97380FD20BAA75F4C /* Pods_CHTCollectionViewWaterfallLayout_Rx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHTCollectionViewWaterfallLayout_Rx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7EBB7715325157699E9778 /* Pods-CHTCollectionViewWaterfallLayout+Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHTCollectionViewWaterfallLayout+Rx.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHTCollectionViewWaterfallLayout+Rx/Pods-CHTCollectionViewWaterfallLayout+Rx.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				32591C561E98D29E00545D96 /* CHTWaterfallLayout.swift */,
-				32D195471EBACFAA00FE669C /* CHTWaterfallLayoutList.swift */,
+				32D195471EBACFAA00FE669C /* CHTWaterfallList.swift */,
 			);
 			name = "CHTCollectionViewWaterfallLayout+Rx";
 			path = "../CHTCollectionViewWaterfallLayout+Rx";
@@ -243,7 +243,7 @@
 				32C4DC011EDA9C7300053AB9 /* XXXCollectionViewHeader.swift in Sources */,
 				32C4DBFD1EDA8F3A00053AB9 /* GroupViewController.swift in Sources */,
 				32591C571E98D29E00545D96 /* CHTWaterfallLayout.swift in Sources */,
-				32D195481EBACFAA00FE669C /* CHTWaterfallLayoutList.swift in Sources */,
+				32D195481EBACFAA00FE669C /* CHTWaterfallList.swift in Sources */,
 				32591C461E98B3C100545D96 /* ViewController.swift in Sources */,
 				32C4DBFF1EDA9C4200053AB9 /* XXXCollectionViewCell.swift in Sources */,
 				32C4DBFB1EDA8F2900053AB9 /* PlainViewController.swift in Sources */,

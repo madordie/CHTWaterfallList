@@ -22,6 +22,11 @@ class PlainViewController: UIViewController {
 
         view.addSubview(list)
         list.frame = view.bounds
+//        list.rx.contentOffset
+//            .subscribe(onNext: { (offset) in
+//                print(offset)
+//            })
+//            .addDisposableTo(disposeBag)
 
         list.viewModel = {
             var source = [CHTWaterfallListModel]()
@@ -53,11 +58,5 @@ class PlainViewController: UIViewController {
             }
             return source
         }()
-
-        list.rx.contentOffset
-            .subscribe(onNext: { (offset) in
-                print(offset)
-            })
-            .addDisposableTo(disposeBag)
     }
 }

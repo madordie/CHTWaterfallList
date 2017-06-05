@@ -242,7 +242,9 @@ extension CHTWaterfallLayout {
              * 4. Section footer
              */
             let columnIndex = longestColumnIndex(inSection: section)
-            top = columnHeights[section][columnIndex] - minimumInteritemSpacing + sectionInset.bottom
+            top = columnHeights[section].count > 0
+                    ? columnHeights[section][columnIndex] - minimumInteritemSpacing + sectionInset.bottom
+                    : 0
             let footerHeight = getHeightForFooterInSection?(section) ?? self.footerHeight
             let footerInset = getInsetForFooterInSection?(section) ?? self.footerInset
 
@@ -332,15 +334,23 @@ extension CHTWaterfallLayout {
             }
             i -= 1
         }
-        var attrs = [UICollectionViewLayoutAttributes]()
+        var suppls = [UICollectionViewLayoutAttributes]()
+        var decos = [UICollectionViewLayoutAttributes]()
+        var cells = [UICollectionViewLayoutAttributes]()
         for i in begin..<end {
             let attr = allItemAttributes[i]
             if CGRect.intersects(rect)(attr.frame) {
-                attrs.append(attr)
+                switch attr.representedElementCategory {
+                case .supplementaryView:
+                    suppls.append(attr)
+                case .decorationView:
+                    decos.append(attr)
+                case .cell:
+                    cells.append(attr)
+                }
             }
         }
-
-        return attrs
+        return cells + suppls + decos
     }
 
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
