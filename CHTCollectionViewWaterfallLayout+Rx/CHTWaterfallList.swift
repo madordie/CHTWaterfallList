@@ -81,7 +81,6 @@ fileprivate extension CHTWaterfallList {
         alwaysBounceVertical = true
         backgroundColor = UIColor.white
         dataSource = self
-        delegate = self
 
         watefallLayout?.getColumnCountForSection = { [weak self] (idx) in
             guard let _self = self else { return 0 }
@@ -223,8 +222,4 @@ extension CHTWaterfallList: UICollectionViewDataSource {
 
         return returnView
     }
-}
-
-extension CHTWaterfallList: UICollectionViewDelegate {
-
 }
