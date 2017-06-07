@@ -116,7 +116,6 @@ class CHTWaterfallLayout: UICollectionViewLayout {
 
     // MARK : fileprivate
 
-    fileprivate var delegate: NSObject?
     /// Array to store height for each column
     fileprivate var columnHeights: [[CGFloat]] = []
     /// Array of arrays. Each array stores item attributes for each section
